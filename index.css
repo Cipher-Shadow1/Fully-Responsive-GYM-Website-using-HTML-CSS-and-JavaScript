@@ -12,10 +12,10 @@
 }
 
 :root {
-  --bg-color: #000;
-  --snd-bg-color: #111;
+  --bg-color: #242424;
+  --snd-bg-color: #242424;
   --text-color: #fff;
-  --main-color: #45ffca;
+  --main-color: #ffbf00;
 }
 
 html {
@@ -24,8 +24,13 @@ html {
 }
 
 body {
-  background: var(--bg-color);
-  color: var(--main-color);
+  background: linear-gradient(
+    to bottom right,
+    rgb(17, 145, 17) 0%,
+    black 45%,
+    black 100%
+  );
+  color: var(--text-color);
 }
 
 section {
@@ -33,6 +38,10 @@ section {
   padding: 10rem 8% 2rem;
 }
 
+.heading {
+  font-size: 6rem;
+  text-align: center;
+}
 header {
   position: fixed;
   width: 100%;
@@ -106,4 +115,313 @@ span {
   color: var(--main-color);
   cursor: pointer;
   display: none;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content h3 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.home-content span {
+  font-size: 4rem;
+  font-weight: 550;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.home-content h1 {
+  font-size: 5.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.home-img img {
+  width: 45vw;
+}
+
+.home-content p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+  box-shadow: none;
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: var(--text-color);
+  box-shadow: 0 0 1.6rem var(--text-color);
+}
+
+.service {
+  background: var(--snd-bg-color);
+}
+
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  align-items: center;
+  gap: 2.3rem;
+  margin-top: 4.1rem;
+}
+
+.row {
+  background: #000;
+  border-radius: 27px;
+  border: 0.3px solid transparent;
+  box-shadow: 0 0 5px var(--main-color);
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+
+.row img {
+  height: auto;
+  width: 100%;
+  border-radius: 27px;
+  border: none;
+  margin-bottom: 1.4rem;
+}
+
+.row h4 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.row:hover {
+  border: 1px solid var(--main-color);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.about {
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-img img {
+  width: 50vw;
+  border: 1px solid var(--text-color);
+  border-radius: 1rem;
+  transition: all 0.5s ease;
+}
+
+.about-img img:hover {
+  border: 2px solid var(--text-color);
+  transform: scale(1.01);
+}
+
+.about-content {
+  padding: 0 3rem;
+}
+
+.about-content h2 {
+  text-align: center;
+  line-height: 1.2;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 2rem;
+}
+
+.plans {
+  background: var(--snd-bg-color);
+}
+
+.plan-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  gap: 2.3rem;
+  margin-top: 4.2rem;
+}
+
+.box {
+  padding: 10px 10px 40px 30px;
+  height: 40rem;
+  background-color: var(--bg-color);
+  border-radius: 27px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px var(--main-color);
+  transition: all 0.5s ease;
+}
+
+.box h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.box h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.box ul li {
+  list-style: square;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+
+.box a {
+  display: inline-flex; /* Use inline-flex to make items stay on the same line */
+  align-items: center; /* Vertically center the text and icon */
+  font-size: 22px;
+  line-height: 1.2rem;
+  font-weight: 700;
+  padding: 10px 0px;
+  color: var(--text-color);
+  border-bottom: 2px solid #5d6c83;
+  transition: all 0.5s ease;
+}
+.box i {
+  vertical-align: middle; /* Align icon vertically with text */
+  font-size: 25px; /* Adjust the size of the icon */
+  color: var(--main-color);
+  margin-left: 5px; /* Add a small margin for spacing */
+}
+.box a:hover {
+  border-bottom: 2px solid var(--main-color);
+}
+
+.box:hover {
+  border: 1px solid var(--main-color);
+  transform: translateY(5px) scale(1.03);
+}
+
+.review {
+  background: #000;
+}
+
+.reveiw-box {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.review .heading {
+  margin-bottom: 5rem;
+}
+
+.reveiw-box img {
+  width: 15rem;
+  border-radius: 50%;
+  border: 1.5px solid var(--main-color);
+}
+
+.warpper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.review-item {
+  min-height: 450px;
+  min-width: 350px;
+  background: var(--snd-bg-color);
+  border: 3px solid rgb(238, 238, 238, 0.3);
+  border-radius: 2rem;
+  margin: 0 2rem;
+  padding: 39px 60px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.review-item:hover {
+  border: 3px solid var(--main-color);
+  transform: translateY(-5px) scale(1.03);
+}
+
+.review-item h2 {
+  font-size: 2.8rem;
+}
+
+.review-item p {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+#star {
+  color: gold;
+  font-size: 2rem;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0px;
+  background-color: var(--bg-color);
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 20px;
+  color: var(--main-color);
+}
+
+.footer .social a {
+  font-size: 32px;
+  color: var(--main-color);
+  line-height: 42px;
+  display: inline;
+  text-align: center;
+  border: 2px solid var(--main-color);
+  border-radius: 49%;
+  margin: 0 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.footer .social a:hover {
+  transform: scale(1.3) translateY(-10px);
+  background: var(--main-color);
+  color: #131313;
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.footer .copyright {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  width: 50px;
 }
