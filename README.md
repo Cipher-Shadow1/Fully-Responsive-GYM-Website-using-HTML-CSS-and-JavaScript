@@ -1,6 +1,6 @@
 # Fully Responsive Gym Website
 
-![Preview](./asset/priview.svg)
+![Preview](./Asset/priview.svg)
 
 ## Overview
 
