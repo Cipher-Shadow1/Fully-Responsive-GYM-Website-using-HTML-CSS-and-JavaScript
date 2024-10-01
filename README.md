@@ -1,6 +1,9 @@
 # Fully Responsive Gym Website
 
+![Preview](./asset/priview.svg)
+
 ## Overview
+
 A dynamic and fully responsive gym website built from scratch using **HTML**, **CSS**, and **JavaScript**.
 
 ## Features
@@ -15,6 +18,7 @@ A dynamic and fully responsive gym website built from scratch using **HTML**, **
   Developed to deliver a smooth and intuitive browsing experience across all screen sizes.
 
 ## Technologies Used
+
 - HTML
 - CSS
 - JavaScript
